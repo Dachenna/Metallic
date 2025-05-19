@@ -1,17 +1,16 @@
 /* eslint-disable no-unused-vars */
-import { animate } from 'framer-motion'
-import React from 'react'
-import { useNavigate } from 'react-router';
+import React from 'react';
 import { motion } from 'framer-motion';
-import Image from "../Hero/image1.png"
+import Image from "../Hero/image1.png";
+import { FaCube } from 'react-icons/fa';
 
-export const FadeUp = (delay) =>{
-    return{
+export const FadeUp = (delay) => {
+    return {
         initial: {
             opacity: 0,
             y: 50,
         },
-        animate:{
+        animate: {
             opacity: 1,
             y: 0,
             transition: {
@@ -26,33 +25,70 @@ export const FadeUp = (delay) =>{
 };
 
 function Hero() {
-  return (
-    <section className=" bg-primary">
-        <div className="container grid grid-cols-1 md:grid-cols-2 min-h-[650px]">
-            {/**Brand Info */}
-            <div className="flex flex-col justify-center py-14 md:py-0 relative z-20">
-                <div className="text-left md:text-center space-y-10 lg:max-w-[450px]">
-                    <motion.h1
-                     variants={FadeUp(0.6)}
-                     initial="initial"
-                     animate="animate"
-                     className="text-3xl lg:text-5xl font-header 
-                     !leading-snug ">Innovative Metal Solution for Every Problems</motion.h1>
-                </div>
-                <div className="flex items-center justify-center md:justify-start mt-10 md:mt-14">
-                    <p>
-                      At our company, we specialize in crafting high-quality metal works tailored to your unique requirements.
-                      From stylish railings to custom wheelchair designs, 
-                      we bring your visions to life with precision and artistry.
-                    </p>
-                </div>
-                <div className="flex">
-                
+    return (
+        <section className="bg-primary">
+            <div className="container mx-auto px-4 md:px-8 relative py-8">
+                {/* Content Wrapper */}
+                <div>
+                    {/* Border Wrapper */}
+                    <div className="border border-gray-500 rounded-xl p-4 md:p-6 lg:p-8 inline-block">
+                        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-4">
+                            {/* Brand Info */}
+                            <div className="flex flex-col justify-center relative z-20 text-center md:text-left">
+                                <div className="space-y-4 lg:max-w-[450px]">
+                                    <motion.h1
+                                        variants={FadeUp(0.6)}
+                                        initial="initial"
+                                        animate="animate"
+                                        className="text-3xl lg:text-5xl font-header leading-snug text-shadow-custom text-white"
+                                    >
+                                        Innovative Metal Solution for Every Problem
+                                    </motion.h1>
+                                    <motion.p
+                                        variants={FadeUp(0.8)}
+                                        initial="initial"
+                                        animate="animate"
+                                        className="text-base text-gray-100 text-justify"
+                                    >
+                                        At our company, we specialize in crafting high-quality 
+                                        metal works tailored to your unique requirements. 
+                                        From stylish railings to custom wheelchair designs, 
+                                        we bring your visions to life with precision and artistry.
+                                    </motion.p>
+                                    <motion.div
+                                        initial={{ opacity: 0, y: -50 }}
+                                        animate={{ opacity: 1, y: 0 }}
+                                        transition={{ delay: 0.2 }}
+                                        className="flex flex-row items-center gap-4 mt-4"
+                                    >
+                                        <button className="py-2.5 px-6 font-body border primary-btn border-gray-500 rounded-xl hover:bg-gray-600 hover:text-white transition">
+                                            Explore
+                                            <FaCube className="inline-block text-sm ml-2 duration-100" />
+                                        </button>
+                                        <button className="py-2 px-6 font-body border border-gray-500 rounded-xl hover:bg-gray-700 hover:text-white transition">
+                                            Contact
+                                        </button>
+                                    </motion.div>
+                                </div>
+                            </div>
+
+                            {/* Hero Image */}
+                            <div className="flex justify-center items-center relative">
+                                <motion.img
+                                    initial={{ x: 50, opacity: 0 }}
+                                    animate={{ x: 0, opacity: 1 }}
+                                    transition={{ duration: 0.6, delay: 0.4, ease: "easeInOut" }}
+                                    src={Image}
+                                    alt="hero"
+                                    className="w-[90%] max-w-[400px] md:max-w-[500px] lg:max-w-[550px] h-auto rounded-lg shadow-lg"
+                                />
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-  )
-} 
+        </section>
+    );
+}
 
-export default Hero
+export default Hero;
