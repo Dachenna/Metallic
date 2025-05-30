@@ -47,7 +47,7 @@ const YearLayout = () => {
                         className="relative grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16"
                     >
                         {/* Vertical Divider Line */}
-                        <div className="hidden lg:block absolute left-1/2 top-0 h-full w-px bg-gray-300 z-0 transform -translate-x-1/2" />
+                        <div className="hidden lg:block absolute left-1/2 top-0 h-full w-px bg-gray-700 z-0 transform -translate-x-1/2" />
 
                         {/* Left Section: Year and Content */}
                         <div className={`relative z-10 py-4 px-2 flex flex-col items-center lg:items-end ${index % 2 === 1 ? "order-2 lg:pr-12" : "lg:pl-12"}`}>

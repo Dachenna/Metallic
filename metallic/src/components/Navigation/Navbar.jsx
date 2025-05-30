@@ -14,12 +14,12 @@ const NavMenu = [
     {
         id: 2,
         name: "Our Work",
-        link: "#our-work"
+        link: "/our-work"
     },
     {
         id: 3,
         name: "About Us",
-        link: "#about"
+        link: "/about"
     },
     {
         id: 4,
@@ -29,7 +29,7 @@ const NavMenu = [
     {
         id: 5,
         name: "Contact Us",
-        link: "#contact"
+        link: "/contact"
     },
 ];
 
