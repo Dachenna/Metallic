@@ -27,7 +27,7 @@ const Feature2 = () => {
     ];
 
     return (
-        <div className="bg-gray-50 py-12">
+        <div className="bg-gray-50 py-12" id='services'>
             <main className="container mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Header Section */}
                 <section className="text-center lg:text-left mb-12">

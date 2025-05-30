@@ -59,7 +59,7 @@ function Hero() {
                                         initial={{ opacity: 0, y: -50 }}
                                         animate={{ opacity: 1, y: 0 }}
                                         transition={{ delay: 0.2 }}
-                                        className="flex flex-row items-center gap-4 mt-4"
+                                        className="flex flex-row items-center gap-4 mt-4 lg:mt-8"
                                     >
                                         <button className="py-2.5 px-6 font-body border primary-btn border-gray-500 rounded-xl hover:bg-gray-600 hover:text-white transition">
                                             Explore
