@@ -3,7 +3,7 @@ import Navbar from './components/Navigation/Navbar'
 import Features from "./components/Features/Features";
 import Feature2 from "./components/Features/Feature2";
 import YearLayout from "./components/Features/YearLayout";
-import { FAQ } from "./components/FAQ/FAQ";
+import Question from "./components/Question/Question";
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <Features />
       <Feature2 />
       <YearLayout />
-      <FAQ />
+      <Question />
     </main>
   )
 }
