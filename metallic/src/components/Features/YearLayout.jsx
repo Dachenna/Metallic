@@ -52,8 +52,8 @@ const YearLayout = () => {
                         {/* Left Section: Year and Content */}
                         <div className={`relative z-10 py-4 px-2 flex flex-col items-center lg:items-end ${index % 2 === 1 ? "order-2 lg:pr-12" : "lg:pl-12"}`}>
                             <div className="max-w-md text-center lg:text-right">
-                                <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">{milestone.year}</h2>
-                                <h3 className="text-xl sm:text-2xl font-semibold text-gray-800 mb-2">{milestone.title}</h3>
+                                <h2 className="text-2xl sm:text-3xl font-bold font-header text-gray-900 mb-2">{milestone.year}</h2>
+                                <h3 className="text-xl sm:text-2xl font-semibold font-body text-gray-800 mb-2">{milestone.title}</h3>
                                 <p className="text-gray-600 text-base mb-6">{milestone.description}</p>
                                 {/* Example buttons */}
                                 <div className="flex flex-wrap justify-center lg:justify-end gap-2">
