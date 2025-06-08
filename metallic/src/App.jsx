@@ -4,6 +4,7 @@ import Features from "./components/Features/Features";
 import Feature2 from "./components/Features/Feature2";
 import YearLayout from "./components/Features/YearLayout";
 import Question from "./components/Question/Question";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Feature2 />
       <YearLayout />
       <Question />
+      <Footer />
     </main>
   )
 }

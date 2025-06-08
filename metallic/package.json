@@ -12,6 +12,7 @@
   "dependencies": {
     "@fontsource/inconsolata": "^5.2.5",
     "@fontsource/noto-sans": "^5.2.6",
+    "emailjs": "^4.0.3",
     "framer-motion": "^12.6.2",
     "lucide-react": "^0.503.0",
     "motion": "^12.6.2",

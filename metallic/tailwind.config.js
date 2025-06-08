@@ -27,6 +27,8 @@ export default {
         textiary: "#D3D3D3",
         customGreen: "#C1E1C1",
         customPink: "#Da70d6",
+        dark:"#333333",
+        dark2: "#797979",
       },
       container:{
         center: true,
