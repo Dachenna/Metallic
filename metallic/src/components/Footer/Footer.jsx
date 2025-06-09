@@ -60,17 +60,22 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className='border border-t-black mt-8 pt-5 -pb-4'>
-          <p className='flex flex-row  text-center text-sm text-gray-600  '>
+        {/* Copyright */}
+        <div className='border-t border-black mt-8 pt-5 flex flex-col md:flex-row items-center md:items-start justify-between'>
+          <p className='text-sm text-gray-600 mb-2 md:mb-0'>
             &copy; {new Date().getFullYear()} DBits. All rights reserved.
           </p>
-          <div>
-            <ul className='flex flex-row justify-center space-x-4 text-gray-600 text-sm mt-2'>
-              <li><a href="#" className='font-body hover:text-[#383636] transition duration-300'>Policies</a></li>
-              <li><a href="#" className='font-body hover:text-[#383636] transition duration-300'>Terms of Service</a></li>
-              <li><a href="#" className='font-body hover:text-[#383636] traansition duration-300'>Cookies Settings</a></li>
-            </ul>
-          </div>
+          <ul className='flex flex-row justify-center md:justify-end space-x-4 text-gray-600 text-sm'>
+            <li>
+              <a href="#" className='font-body hover:text-[#383636] transition duration-300'>Policies</a>
+            </li>
+            <li>
+              <a href="#" className='font-body hover:text-[#383636] transition duration-300'>Terms of Service</a>
+            </li>
+            <li>
+              <a href="#" className='font-body hover:text-[#383636] transition duration-300'>Cookies Settings</a>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>
