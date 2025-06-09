@@ -41,7 +41,6 @@ function Footer() {
           <div className="flex flex-col md:flex-row gap-12 lg:ml-auto">
             {/* Second Section */}
             <div>
-              <h3 className='font-header text-lg mb-2'>Quick Links</h3>
               <ul className='space-y-1 font-semibold'>
                 <li><a href='#' className='font-header text-black hover:text-gray-700 transition duration-300'>About Us</a></li>
                 <li><a href='#' className='font-header text-black hover:text-gray-700 transition duration-300'>Services</a></li>
@@ -51,7 +50,6 @@ function Footer() {
             </div>
             {/* Third Section */}
             <div>
-              <h3 className='font-header text-lg mb-2'>More</h3>
               <ul className='space-y-1 font-bold'>
                 <li><a href="#" className='font-header text-black hover:text-gray-600 transition duration-300'>Blog</a></li>
                 <li><a href="#" className='font-header text-black hover:text-gray-600 transition duration-300'>Gallery</a></li>
@@ -66,6 +64,11 @@ function Footer() {
           <p className='flex flex-row  text-center text-sm text-gray-600  '>
             &copy; {new Date().getFullYear()} DBits. All rights reserved.
           </p>
+          <div>
+            <a href="#">
+
+            </a>
+          </div>
         </div>
       </div>
     </footer>
