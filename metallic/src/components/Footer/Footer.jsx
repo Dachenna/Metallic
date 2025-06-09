@@ -65,9 +65,11 @@ function Footer() {
             &copy; {new Date().getFullYear()} DBits. All rights reserved.
           </p>
           <div>
-            <a href="#">
-
-            </a>
+            <ul className='flex flex-row justify-center space-x-4 text-gray-600 text-sm mt-2'>
+              <li><a href="#" className='font-body hover:text-[#383636] transition duration-300'>Policies</a></li>
+              <li><a href="#" className='font-body hover:text-[#383636] transition duration-300'>Terms of Service</a></li>
+              <li><a href="#" className='font-body hover:text-[#383636] traansition duration-300'>Cookies Settings</a></li>
+            </ul>
           </div>
         </div>
       </div>
