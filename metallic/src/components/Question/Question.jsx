@@ -25,7 +25,7 @@ const faqs = [
 
 function Question() {
   return (
-    <section className="bg-white py-16">
+    <section className="bg-white py-16" id='faqs'>
       <div className="max-w-6xl mx-auto px-4 md:px-8 grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
         {/* Left Column */}
         <div className="md:col-span-1">
