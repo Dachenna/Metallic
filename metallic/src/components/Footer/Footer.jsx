@@ -9,8 +9,10 @@ function Footer() {
       <div className='container'>
         <div className='flex flex-col lg:flex-row justify-between gap-12'>
           {/* First Section */}
-          <div className='space-y-3 max-w-[400px] text-black text-sm'>
-            <Logo />
+          <div className='space-y-3 max-w-[400px] text-black text-sm flex flex-col'>
+            <div className="flex-shrink-0 -mt-6 mb-2">
+              <Logo />
+            </div>
             <h3 className="font-bold font-header text-xl">Address:</h3>
             <p className='font-body'>
               This is the location of the metal construction company.
