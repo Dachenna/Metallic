@@ -4,6 +4,8 @@ import Begin from '../Features/Images/grand-begin.jpg';
 import Innova from '../Features/Images/Innova.jpg';
 import Globale from '../Features/Images/globe.jpg';
 import Future from '../Features/Images/future.png';
+import { motion } from 'framer-motion';
+import { FadeUp } from '../Hero/Hero';
 
 const YearLayout = () => {
     const milestones = [
@@ -43,7 +45,10 @@ const YearLayout = () => {
         <div className="bg-gray-50 py-16">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 {milestones.map((milestone, index) => (
-                    <div
+                    <motion.div
+                        variants={FadeUp(0.6 * index)}
+                        initial="initial"
+                        animate="animate"
                         key={index}
                         className="relative grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16"
                     >
@@ -65,14 +70,14 @@ const YearLayout = () => {
                         </div>
 
                         {/* Right Section: Image */}
-                        <div className={`relative z-10 flex justify-center lg:justify-start py-4 px-2 ${index % 2 === 1 ? "order-1" : ""}`}>
+                        <motion.div className={`relative z-10 flex justify-center lg:justify-start py-4 px-2 ${index % 2 === 1 ? "order-1" : ""}`}>
                             <img
                                 src={milestone.image}
                                 alt={milestone.title}
-                                className="w-full max-w-md rounded-lg shadow-lg object-cover"
+                                className="w-full max-w-md rounded-lg shadow-xl object-cover"
                             />
-                        </div>
-                    </div>
+                        </motion.div>
+                    </motion.div>
                 ))}
             </div>
         </div>
