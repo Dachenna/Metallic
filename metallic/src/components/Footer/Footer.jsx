@@ -69,13 +69,13 @@ function Footer() {
           </p>
           <ul className='flex flex-row justify-center md:justify-end space-x-3 text-gray-600 text-xs'>
             <li>
-              <a href="#" className='font-body hover:text-[#383636] transition duration-300'>Policies</a>
+              <a href="#" className='font-body hover:text-[#383636] hover:underline transition duration-300'>Policies</a>
             </li>
             <li>
-              <a href="#" className='font-body hover:text-[#383636] transition duration-300'>Terms of Service</a>
+              <a href="#" className='font-body hover:text-[#383636] hover:underline transition duration-300'>Terms of Service</a>
             </li>
             <li>
-              <a href="#" className='font-body hover:text-[#383636] transition duration-300'>Cookies Settings</a>
+              <a href="#" className='font-body hover:text-[#383636] hover:underline transition duration-300  '>Cookies Settings</a>
             </li>
           </ul>
         </div>

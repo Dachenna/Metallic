@@ -3,6 +3,7 @@ import BigProject from '../Features/Images/Big-Pro.jpg';
 import Begin from '../Features/Images/grand-begin.jpg';
 import Innova from '../Features/Images/Innova.jpg';
 import Globale from '../Features/Images/globe.jpg';
+import Future from '../Features/Images/future.png';
 
 const YearLayout = () => {
     const milestones = [
@@ -34,7 +35,7 @@ const YearLayout = () => {
             year: "2023",
             title: "Future Vision",
             description: "As we move forward in 2023, we are focused on sustainability and innovative designs. Our goal is to lead the industry with environmentally friendly solutions.",
-            image: "https://via.placeholder.com/400x300",
+            image: Future,
         },
     ];
 
