@@ -70,7 +70,9 @@ const YearLayout = () => {
                         </div>
 
                         {/* Right Section: Image */}
-                        <motion.div className={`relative z-10 flex justify-center lg:justify-start py-4 px-2 ${index % 2 === 1 ? "order-1" : ""}`}>
+                        <motion.div 
+                        className={`relative z-10 flex justify-center 
+                            lg:justify-start py-4 px-2 ${index % 2 === 1 ? "order-1" : ""}`}>
                             <img
                                 src={milestone.image}
                                 alt={milestone.title}
