@@ -70,15 +70,16 @@ const YearLayout = () => {
                         </div>
 
                         {/* Right Section: Image */}
-                        <motion.div 
-                        className={`relative z-10 flex justify-center 
-                            lg:justify-start py-4 px-2 ${index % 2 === 1 ? "order-1" : ""}`}>
-                            <img
+                        <div className={`relative z-10 flex justify-center lg:justify-start py-4 px-2 ${index % 2 === 1 ? "order-1" : ""}`}>
+                            <motion.img
+                                initial={{ opacity: 0, scale: 0.95 }}
+                                animate={{ opacity: 1, scale: 1 }}
+                                onViewportEnter={{contrast: }}
                                 src={milestone.image}
                                 alt={milestone.title}
                                 className="w-full max-w-md rounded-lg shadow-xl object-cover"
                             />
-                        </motion.div>
+                        </div>
                     </motion.div>
                 ))}
             </div>
