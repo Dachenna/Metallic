@@ -3,7 +3,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Image from "../Hero/image1.png";
 import { FaCube } from 'react-icons/fa';
-//import { Feature2 } from '../Features/Feature2';
+import { Demo } from '../Features/Feature2';
 import Features from '../Features/Features';
 
 export const FadeUp = (delay) => {
@@ -91,8 +91,8 @@ function Hero() {
                 </div>
             </div>
         </section>
-        {/*<Feature2 />*/}
         <Features />
+        <Demo />
         </>
     );
 }

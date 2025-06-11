@@ -3,7 +3,7 @@ import WheelChair from '../Features/Images/WheelChair.jpg';
 import Rails from '../Features/Images/Rails.jpg';
 import Gate from '../Features/Images/Gates.jpg';
 
-const Feature2 = () => {
+export const Demo = () => {
     // Card data stored in a single constant
     const cards = [
         {
@@ -91,5 +91,3 @@ const Feature2 = () => {
         </div>
     );
 };
-
-export default Feature2;
