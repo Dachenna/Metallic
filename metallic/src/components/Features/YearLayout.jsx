@@ -48,7 +48,8 @@ const YearLayout = () => {
                     <motion.div
                         variants={FadeUp(0.6 * index)}
                         initial="initial"
-                        animate="animate"
+                       //animate="animate"
+                        whileInView={{opacity: 1, scale: 1, transition: { duration: 0.5, delay: 0.2 * index }}}
                         key={index}
                         className="relative grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16"
                     >
