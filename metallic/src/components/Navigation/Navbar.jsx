@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState } from 'react';
 import Logo from './Logo';
 import { motion } from 'framer-motion';
 import { FaCube, FaBars } from 'react-icons/fa';

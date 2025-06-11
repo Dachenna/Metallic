@@ -1,22 +1,16 @@
-import Hero from "./components/Hero/Hero";
-import Navbar from './components/Navigation/Navbar'
-import Features from "./components/Features/Features";
-import Feature2 from "./components/Features/Feature2";
-import YearLayout from "./components/Features/YearLayout";
-import Question from "./components/Question/Question";
-import Footer from "./components/Footer/Footer";
+import React from 'react';
+import { BrowserRouter } from 'react-router';
+import Layout from './components/Layout/Layout';
 
 function App() {
+
   return (
-    <main className="scroll text-white w-full h-full absolute">
-      <Navbar />
-      <Hero />
-      <Features />
-      <Feature2 />
-      <YearLayout />
-      <Question />
-      <Footer />
-    </main>
+    <BrowserRouter>
+      <main className="scroll text-white w-full h-full absolute">
+        <Layout />
+      </main>
+    </BrowserRouter>
+
   )
 }
 

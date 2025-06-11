@@ -3,6 +3,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Image from "../Hero/image1.png";
 import { FaCube } from 'react-icons/fa';
+//import { Feature2 } from '../Features/Feature2';
+import Features from '../Features/Features';
 
 export const FadeUp = (delay) => {
     return {
@@ -26,6 +28,7 @@ export const FadeUp = (delay) => {
 
 function Hero() {
     return (
+        <>
         <section className="bg-primary">
             <div className="container mx-auto px-4 md:px-8 relative py-8">
                 {/* Content Wrapper */}
@@ -88,6 +91,9 @@ function Hero() {
                 </div>
             </div>
         </section>
+        {/*<Feature2 />*/}
+        <Features />
+        </>
     );
 }
 
