@@ -7,7 +7,7 @@ import Future from '../Features/Images/future.png';
 import { motion } from 'framer-motion';
 import { FadeUp } from '../Hero/Hero';
 
-const YearLayout = () => {
+export const YearLayout = () => {
     const milestones = [
         {
             year: "2010",
@@ -84,5 +84,3 @@ const YearLayout = () => {
         </div>
     );
 };
-
-export default YearLayout;

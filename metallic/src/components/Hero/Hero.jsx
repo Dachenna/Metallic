@@ -5,6 +5,7 @@ import Image from "../Hero/image1.png";
 import { FaCube } from 'react-icons/fa';
 import { Demo } from '../Features/Feature2';
 import Features from '../Features/Features';
+import { YearLayout } from '../Features/YearLayout';
 
 export const FadeUp = (delay) => {
     return {
@@ -93,6 +94,7 @@ function Hero() {
         </section>
         <Features />
         <Demo />
+        <YearLayout />
         </>
     );
 }
