@@ -5,6 +5,7 @@ import Home from '../Hero/Hero'
 import Contact from '../Contact/Contact'
 import Footer from '../Footer/Footer'
 import Navbar from '../Navigation/Navbar'
+import About from '../Contact/About'
 
 const Layout = () => {
   return (
@@ -14,6 +15,9 @@ const Layout = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
+          {/* Add more routes as needed */}
+          {/* Example: <Route path="/services" element={<Services />} /> */}
         </Routes>
         <Footer />
       </div>

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import BigProject from '../Features/Images/Big-Pro.jpg';
 import Begin from '../Features/Images/grand-begin.jpg';
