@@ -6,7 +6,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <main className="scroll text-white w-full h-full absolute">
+      <main className="scroll text-white w-full h-full absolute overflow-auto">
         <Layout />
       </main>
     </BrowserRouter>

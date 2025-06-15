@@ -8,7 +8,7 @@ function Contact() {
       <div className="absolute bottom-20 right-16 w-24 h-24 bg-yellow-400 rounded-full opacity-20 animate-spin-reverse" />
       <div className="absolute top-1/3 left-1/2 w-40 h-20 bg-blue-400 rounded-b-full opacity-30 animate-spin-slow" style={{transform: 'translate(-50%, -50%)'}} />
       <div className="absolute bottom-10 left-1/4 w-16 h-16 bg-pink-400 rounded-lg opacity-20 animate-spin" />
-      <div className='absolute left-6 top-30 w-20 h-20 bg-black rounded-br-md' />
+      <div className='absolute left-6 top-30 w-20 h-20 bg-black rounded-br-md opacity-25 animate-pulse' style={{transform: "skew(90)"}}/>
       <div className="absolute top-1/4 right-1/4 w-20 h-10 bg-purple-500 rounded-tl-full rounded-br-full opacity-20 animate-spin-reverse" />
       <div className="absolute bottom-1/3 right-1/3 w-24 h-12 bg-indigo-400 rounded-bl-full opacity-20 animate-spin" />
 

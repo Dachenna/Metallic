@@ -24,7 +24,7 @@ const NavMenu = [
     {
         id: 4,
         name: "Services",
-        link: "#services"
+        link: "/#services"
     },
     {
         id: 5,
