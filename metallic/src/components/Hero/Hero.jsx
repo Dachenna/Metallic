@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
+import { useNavigate } from 'react-router';
 import { motion } from 'framer-motion';
 import Image from "../Hero/image1.png";
 import { FaCube } from 'react-icons/fa';
@@ -27,7 +28,8 @@ export const FadeUp = (delay) => {
     };
 };
 
-function Hero() {
+function Hero({navigate}) {
+
     return (
         <>
         <section className="bg-primary">
@@ -65,11 +67,15 @@ function Hero() {
                                         transition={{ delay: 0.2 }}
                                         className="flex flex-row items-center gap-4 mt-4 lg:mt-8"
                                     >
-                                        <button className="py-2.5 px-6 font-body border primary-btn border-gray-500 rounded-xl hover:bg-gray-600 hover:text-white transition">
+                                        <button className="py-2.5 px-6 font-body border primary-btn border-gray-500 rounded-xl
+                                         hover:bg-gray-600 hover:text-white transition"
+                                         onClick={() => navigate('/explore')}>
                                             Explore
                                             <FaCube className="inline-block text-sm ml-2 duration-100" />
                                         </button>
-                                        <button className="py-2 px-6 font-body border border-gray-500 rounded-xl hover:bg-gray-700 hover:text-white transition">
+                                        <button className="py-2 px-6 font-body border border-gray-500 rounded-xl 
+                                        hover:bg-gray-700 hover:text-white transition"
+                                        onClick={() => navigate('/contact')}>
                                             Contact
                                         </button>
                                     </motion.div>

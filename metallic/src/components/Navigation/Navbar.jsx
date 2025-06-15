@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router';
 import Logo from './Logo';
 import { motion } from 'framer-motion';
 import { FaCube, FaBars } from 'react-icons/fa';
@@ -33,7 +34,7 @@ const NavMenu = [
     },
 ];
 
-const Navbar = () => {
+const Navbar = ({navigate}) => {
     const [isOpen, setIsOpen] = useState(false);
 
     // Toggle the menu open and close
@@ -69,7 +70,9 @@ const Navbar = () => {
                             ))}
                         </ul>
                         <div className="flex items-center gap-4">
-                            <button className="py-2 px-6 font-body border border-gray-500 rounded-xl hover:bg-gray-700 hover:text-white transition">
+                            <button className="py-2 px-6 font-body border border-gray-500 rounded-xl
+                             hover:bg-gray-700 hover:text-white transition"
+                             onClick={() => navigate('/about')}>
                                 Learn
                                 <FaCube className="inline-block text-sm ml-2" />
                             </button>
@@ -111,7 +114,9 @@ const Navbar = () => {
                             ))}
                         </ul>
                         <div className="flex flex-col items-center gap-4 mt-4">
-                            <button className="py-2 px-6 font-body border border-gray-500 rounded-xl hover:bg-gray-700 hover:text-white transition">
+                            <button className="py-2 px-6 font-body border border-gray-500 rounded-xl 
+                            hover:bg-gray-700 hover:text-white transition"
+                            onClick={()=> navigate('/about')}>
                                 Learn
                                 <FaCube className="inline-block text-sm ml-2" />
                             </button>
