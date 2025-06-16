@@ -56,4 +56,5 @@
   .card-content {
     @apply absolute w-[calc(50%-3px)] h-[calc(50%-3px)] top-[2px] left-[2px] bg-gradient-to-br from-customGreen/95 to-customPink/80 rounded-2xl;
   }
+
 }

@@ -40,7 +40,7 @@ function Hero({navigate}) {
                     <div className="border border-gray-500 rounded-xl p-4 md:p-6 lg:p-8 inline-block">
                         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-4">
                             {/* Brand Info */}
-                            <div className="flex flex-col justify-center relative z-20 text-center md:text-left">
+                            <div className="relative flex flex-col justify-center  z-20 text-center md:text-left">
                                 <div className="space-y-4 lg:max-w-[450px]">
                                     <motion.h1
                                         variants={FadeUp(0.6)}
@@ -65,12 +65,13 @@ function Hero({navigate}) {
                                         initial={{ opacity: 0, y: -50 }}
                                         animate={{ opacity: 1, y: 0 }}
                                         transition={{ delay: 0.2 }}
-                                        className="flex flex-row items-center gap-4 mt-4 lg:mt-8"
+                                        className=" relative flex flex-row items-center gap-4 mt-4 lg:mt-8"
                                     >
-                                        <button className="py-2 px-6 font-body border border-gray-500 rounded-xl 
-                                        hover:bg-gray-700 hover:text-white transition"
+                                        <div className="absolute blur right-[calc(100vh-49%)] m-0 -inset-1 bg-gradient-to-tr from-cyan-600 to-green-400 rounded-md " ></div>
+                                        <button className="relative py-2 px-6 font-body border border-gray-500 rounded-md 
+                                        hover:bg-gray-700 hover:text-white transition leading-none bg-green-800"
                                         onClick={() => navigate('/contact')}>
-                                            Contact Us
+                                            Learn More
                                              <FaCube className="inline-block text-sm ml-2 duration-100" />
                                         </button>
                                     </motion.div>
