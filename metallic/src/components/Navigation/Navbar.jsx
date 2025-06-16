@@ -13,19 +13,9 @@ const NavMenu = [
         link: "/"
     },
     {
-        id: 2,
-        name: "Our Work",
-        link: "/our-work"
-    },
-    {
         id: 3,
         name: "About Us",
         link: "/about"
-    },
-    {
-        id: 4,
-        name: "Services",
-        link: "/#services"
     },
     {
         id: 5,

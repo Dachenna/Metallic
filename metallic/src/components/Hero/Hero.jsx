@@ -67,16 +67,11 @@ function Hero({navigate}) {
                                         transition={{ delay: 0.2 }}
                                         className="flex flex-row items-center gap-4 mt-4 lg:mt-8"
                                     >
-                                        <button className="py-2.5 px-6 font-body border primary-btn border-gray-500 rounded-xl
-                                         hover:bg-gray-600 hover:text-white transition"
-                                         onClick={() => navigate('/explore')}>
-                                            Explore
-                                            <FaCube className="inline-block text-sm ml-2 duration-100" />
-                                        </button>
                                         <button className="py-2 px-6 font-body border border-gray-500 rounded-xl 
                                         hover:bg-gray-700 hover:text-white transition"
                                         onClick={() => navigate('/contact')}>
-                                            Contact
+                                            Contact Us
+                                             <FaCube className="inline-block text-sm ml-2 duration-100" />
                                         </button>
                                     </motion.div>
                                 </div>
@@ -98,9 +93,9 @@ function Hero({navigate}) {
                 </div>
             </div>
         </section>
-        <Features />
-        <Demo />
-        <YearLayout />
+        <Features navigate={navigate}/>
+        <Demo navigate={navigate}/>
+        <YearLayout navigate={navigate}/>
         </>
     );
 }
