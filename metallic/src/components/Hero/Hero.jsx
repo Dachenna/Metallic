@@ -33,11 +33,12 @@ function Hero({navigate}) {
     return (
         <>
         <section className="bg-primary">
-            <div className="container mx-auto px-4 md:px-8 relative py-8">
+            <div className="container relative mx-auto px-4 md:px-8  py-8">
                 {/* Content Wrapper */}
                 <div>
                     {/* Border Wrapper */}
-                    <div className="border border-gray-500 rounded-xl p-4 md:p-6 lg:p-8 inline-block">
+                    <div className="border border-gray-500 rounded-xl p-4 md:p-6 lg:p-8">
+
                         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-4">
                             {/* Brand Info */}
                             <div className="relative flex flex-col justify-center  z-20 text-center md:text-left">
@@ -46,7 +47,7 @@ function Hero({navigate}) {
                                         variants={FadeUp(0.6)}
                                         initial="initial"
                                         animate="animate"
-                                        className="text-3xl lg:text-5xl font-header leading-snug text-shadow-custom text-white"
+                                        className="text-3xl lg:text-5xl xl:text-9xl justify-center font-header leading-snug text-shadow-custom text-white"
                                     >
                                         Innovative Metal Solution for Every Problem
                                     </motion.h1>
@@ -54,7 +55,7 @@ function Hero({navigate}) {
                                         variants={FadeUp(0.8)}
                                         initial="initial"
                                         animate="animate"
-                                        className="text-base text-gray-100 text-justify"
+                                        className="text-base text-gray-100 text-justify font-body leading-normal"
                                     >
                                         At our company, we specialize in crafting high-quality 
                                         metal works tailored to your unique requirements. 
@@ -65,11 +66,10 @@ function Hero({navigate}) {
                                         initial={{ opacity: 0, y: -50 }}
                                         animate={{ opacity: 1, y: 0 }}
                                         transition={{ delay: 0.2 }}
-                                        className=" relative flex flex-row items-center gap-4 mt-4 lg:mt-8"
+                                        className="flex flex-row items-center mt-4 "
                                     >
-                                        <div className="absolute blur right-[calc(100vh-49%)] m-0 -inset-1 bg-gradient-to-tr from-cyan-600 to-green-400 rounded-md " ></div>
-                                        <button className="relative py-2 px-6 font-body border border-gray-500 rounded-md 
-                                        hover:bg-gray-700 hover:text-white transition leading-none bg-green-800"
+                                        <button className="sm:justify md:items-center py-2 px-6 font-body border border-gray-500 rounded-md 
+                                        hover:bg-gray-700 leading-none bg-green-800 duration-200"
                                         onClick={() => navigate('/contact')}>
                                             Learn More
                                              <FaCube className="inline-block text-sm ml-2 duration-100" />
