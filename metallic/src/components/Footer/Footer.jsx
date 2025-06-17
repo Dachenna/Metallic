@@ -40,9 +40,9 @@ function Footer() {
           </div>
 
           {/* Second & Third Section grouped and aligned right */}
-          <div className="flex flex-col md:flex-col gap-8 lg:ml-auto">
+          <div className="grid  grid-flow-col gap-2 lg:ml-auto">
             {/* Second Section */}
-            <div className=' md:flex-col-1'>
+            <div className=' grid grid-cols-2'>
               <ul className='space-y-1 font-semibold text-sm'>
                 <li><a href='#' className='font-header text-black hover:text-gray-700 transition duration-300'>About Us</a></li>
                 <li><a href='#' className='font-header text-black hover:text-gray-700 transition duration-300'>Services</a></li>
@@ -51,7 +51,7 @@ function Footer() {
               </ul>
             </div>
             {/* Third Section */}
-            <div className='md:flex-col-1'>
+            <div className='grid grid-cols-1'>
               <ul className='space-y-1 font-bold text-sm'>
                 <li><a href="#" className='font-header text-black hover:text-gray-600 transition duration-300'>Blog</a></li>
                 <li><a href="#" className='font-header text-black hover:text-gray-600 transition duration-300'>Gallery</a></li>

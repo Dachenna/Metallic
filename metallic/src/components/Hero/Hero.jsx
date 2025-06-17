@@ -47,7 +47,7 @@ function Hero({navigate}) {
                                         variants={FadeUp(0.6)}
                                         initial="initial"
                                         animate="animate"
-                                        className="text-3xl lg:text-5xl xl:text-9xl justify-center font-header leading-snug text-shadow-custom text-white"
+                                        className="text-3xl lg:text-6xl justify-center font-header leading-snug text-shadow-custom text-white"
                                     >
                                         Innovative Metal Solution for Every Problem
                                     </motion.h1>
