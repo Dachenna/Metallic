@@ -3,7 +3,7 @@ import WheelChair from '../Features/Images/WheelChair.jpg';
 import Rails from '../Features/Images/Rails.jpg';
 import Gate from '../Features/Images/Gates.jpg';
 
-export const Demo = () => {
+export const Demo = ({navigate}) => {
     // Card data stored in a single constant
     const cards = [
         {
@@ -77,15 +77,13 @@ export const Demo = () => {
                 {/* Buttons Section */}
                 <section className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
                     <button
-                        className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-indigo-700 bg-green-100 hover:bg-green-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                        className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md
+                         text-indigo-700 bg-green-100 hover:bg-green-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                         onClick={() => navigate('/about')}
                     >
                         Learn More
                     </button>
-                    <button
-                        className="inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gradient-to-tr from-slate-400 to-slate-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                    >
-                        Sign Up
-                    </button>
+            
                 </section>
             </main>
         </div>

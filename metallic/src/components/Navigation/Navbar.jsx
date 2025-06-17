@@ -61,14 +61,12 @@ const Navbar = ({navigate}) => {
                         </ul>
                         <div className="flex items-center gap-4">
                             <button className="py-2 px-6 font-body border border-gray-500 rounded-xl
-                             hover:bg-gray-700 hover:text-white transition"
+                             before:hover:bg-cyan-700 hover:text-white transition"
                              onClick={() => navigate('/about')}>
                                 Learn
                                 <FaCube className="inline-block text-sm ml-2" />
                             </button>
-                            <button className="py-2 px-6 font-body border primary-btn border-gray-500 rounded-xl hover:bg-gray-600 hover:text-white transition">
-                                Sign In
-                            </button>
+                            
                         </div>
                     </motion.div>
 

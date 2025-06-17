@@ -27,7 +27,7 @@ function Features({navigate}) {
   // Dummy product data (replace with your actual data source)
   const products = [
     {
-      title: "Custom Wheelchairs for Enhanced Mobility",
+      title: "Glass Stars for elegance and beauty",
       description: "Our wheelchairs are designed for comfort and accessibility.",
       image: <HandMetal className="w-16 h-16 text-gray-400" />,
     },
@@ -97,21 +97,14 @@ function Features({navigate}) {
                 <h3 className="text-lg font-medium text-gray-900 font-header">{product.title}</h3>
                 <p className="mt-2 text-sm text-gray-500 font-body">{product.description}</p>
                 <div className="mt-4 flex flex-col sm:flex-row justify-center lg:justify-start gap-2">
-                  <button
-                    className="inline-flex items-center px-4 py-2 border border-transparent 
-                    text-sm font-medium rounded-md text-indigo-700 bg-green-100 hover:bg-green-200 
-                    focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                    onClick={() =>navigate('/ourwork')}
-                  >
-                    Explore
-                  </button>
+                  
                   <button
                     className="inline-flex items-center px-4 py-2 border border-gray-300 text-sm 
                     font-medium rounded-md text-gray-700 bg-white hover:bg-gradient-to-tr from-slate-400 to-slate-500 
                     focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                     onClick={() =>navigate('/contact')}
                   >
-                    Contact
+                    Learn 
                   </button>
                 </div>
               </div>
