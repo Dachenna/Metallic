@@ -1,4 +1,5 @@
 import React from 'react';
+import GradientText from '../GradientText';
 
 function About() {
   return (
@@ -14,8 +15,19 @@ function About() {
           Every project is a collaboration, and every detail matters. Let’s build something remarkable together.
         </p>
         <div className="flex justify-center gap-4">
-          <a href="/#services" className="px-6 py-2 rounded bg-green-700 text-white font-semibold hover:bg-green-800 transition">Our Services</a>
-          <a href="/contact" className="px-6 py-2 rounded border border-green-700 text-green-700 font-semibold hover:bg-green-50 transition">Contact Us</a>
+          <a href="/#services" className="px-6 py-2 rounded bg-green-700 text-white font-semibold hover:bg-green-800 transition">Services</a>
+          <a href="/contact" className="px-6 py-2 rounded border border-green-700 text-green-700 font-semibold hover:bg-green-50 transition">
+            <GradientText
+              colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+              animationSpeed={3}
+              showBorder={false}
+              className="custom-class"
+            >
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-blue-500">
+                Get in Touch
+              </span>
+            </GradientText>
+          </a>
         </div>
       </div>
     </section>

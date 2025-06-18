@@ -12,6 +12,11 @@ export default {
         body: ["Noto Sans", "sans-serif"],
       },
       keyframes: {
+        gradient: {
+          '0%': { backgroundPosition: '0% 50%' },
+          '50%': { backgroundPosition: '100% 50%' },
+          '100%': { backgroundPosition: '0% 50%' },
+        },
       'border-spin':{
         '100%':{
           transform: 'rotate(360deg)',
@@ -20,6 +25,7 @@ export default {
     },
     animation:{
       'border-spin': 'border-spin 2s linear infinite',
+      gradient: 'gradient 8s linear infinite',
     },
       colors:{
         primary: "#275838",
