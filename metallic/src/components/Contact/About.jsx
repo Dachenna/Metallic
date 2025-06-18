@@ -21,7 +21,7 @@ function About() {
               colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
               animationSpeed={3}
               showBorder={false}
-              className="custom-class"
+              className="custom-class hover:bg-green-50 transition"
             >
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-blue-500">
                 Get in Touch
